@@ -69,8 +69,11 @@ def longest_common_word(first, second):
                 continue
         else:
             if len(word) > lenLongestWord:
-                longestCommonWord = word
-                lenLongestWord = len(word)
+                if word in second:
+                    longestCommonWord = word
+                    lenLongestWord = len(word)
+                else: 
+                    continue
     return longestCommonWord
         
     raise Exception('Not implemented')
