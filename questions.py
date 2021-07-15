@@ -74,6 +74,8 @@ def longest_common_word(first, second):
                     lenLongestWord = len(word)
                 else: 
                     continue
+            else:
+                continue
     return longestCommonWord
         
     raise Exception('Not implemented')
